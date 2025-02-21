@@ -1,0 +1,230 @@
+.navbarDiv {
+    background-color: black;
+    height: 70px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    padding-left: 100px;
+}
+
+.formDiv {
+    /* display: flex; */
+}
+
+input {
+    margin-bottom: 20px;
+    height: 30px;
+}
+
+/* From Uiverse.io by dylanharriscameron */
+.card {
+    position: relative;
+    width: 200px;
+    height: 250px;
+    border-radius: 14px;
+    z-index: 1111;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    ;
+}
+
+.bg {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 190px;
+    height: 240px;
+    z-index: 2;
+    background: rgba(255, 255, 255, .95);
+    backdrop-filter: blur(24px);
+    border-radius: 10px;
+    overflow: hidden;
+    outline: 2px solid white;
+}
+
+.blob {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #ff0000;
+    opacity: 1;
+    filter: blur(12px);
+    animation: blob-bounce 5s infinite ease;
+}
+
+@keyframes blob-bounce {
+    0% {
+        transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+
+    25% {
+        transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+    }
+
+    50% {
+        transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+    }
+
+    75% {
+        transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+    }
+
+    100% {
+        transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+}
+
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 30px;
+    gap: 50px;
+    flex-wrap: wrap;
+    /* flex-grow: ; */
+}
+
+/* From Uiverse.io by andrew-demchenk0 */ 
+.button {
+    position: relative;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid #34974d;
+    background-color: #3aa856;
+  }
+  
+  .button, .button__icon, .button__text {
+    transition: all 0.3s;
+  }
+  
+  .button .button__text {
+    transform: translateX(30px);
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .button .button__icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: #34974d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button .svg {
+    width: 30px;
+    stroke: #fff;
+  }
+  
+  .button:hover {
+    background: #34974d;
+  }
+  
+  .button:hover .button__text {
+    color: transparent;
+  }
+  
+  .button:hover .button__icon {
+    width: 148px;
+    transform: translateX(0);
+  }
+  
+  .button:active .button__icon {
+    background-color: #2e8644;
+  }
+  
+  .button:active {
+    border: 1px solid #2e8644;
+  }
+
+  .clearCartBtn{
+    width: 107px;
+    height: 30px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+
+  /* From Uiverse.io by hannahyockel */ 
+  .tooltip {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    border: 0px solid transparent;
+    background-color: rgba(100,77,237,0.08);
+    border-radius: 1.25em;
+    transition: all 0.2s linear;
+    cursor: pointer;
+   }
+   
+   .tooltip:hover {
+    box-shadow: 3.4px 2.5px 4.9px rgba(0, 0, 0, 0.025),
+     8.6px 6.3px 12.4px rgba(0, 0, 0, 0.035),
+     17.5px 12.8px 25.3px rgba(0, 0, 0, 0.045),
+     36.1px 26.3px 52.2px rgba(0, 0, 0, 0.055),
+     99px 72px 143px rgba(0, 0, 0, 0.08);
+   }
+   
+   .tooltip {
+    position: relative;
+    display: inline-block;
+   }
+   
+   .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 4em;
+    background-color: rgba(0, 0, 0, 0.253);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 25%;
+    left: 110%;
+   }
+   
+   .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent rgba(0, 0, 0, 0.253) transparent transparent;
+   }
+   
+   .tooltip:hover .tooltiptext {
+    visibility: visible;
+   }
